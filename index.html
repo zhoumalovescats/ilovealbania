@@ -1,3 +1,136 @@
-<h1>
-hello
-</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .fade-in {
+  animation: fadeIn ease 5s;
+  -webkit-animation: fadeIn ease 5s;
+  -moz-animation: fadeIn ease 5s;
+  -o-animation: fadeIn ease 5s;
+  -ms-animation: fadeIn ease 5s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+}
+}
+h1 { 
+  
+font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+body {
+    background-color: #ff0100;
+}
+
+#spinner {
+  animation-name: spinner;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+  transform-style: preserve-3d;
+  text-align:center;
+}
+@keyframes spinner {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(-360deg);
+  }
+}
+
+    </style>
+<div class="fade-in" style="position: fixed; top: 50%; left: 50%;
+transform: translate(-50%, -50%);" id="BLOODCLART" onmouseover="ad()">
+    <video class="don2" id="donerkebab" src="https://cdn.discordapp.com/attachments/897486947398848583/942880827736473630/bare.mp4" width="500" height="500" autoplay muted loop>
+    </video>
+ </div>
+
+ <div align="center"> 
+     <h1 id="spinner"> 
+         hover on alabania flag
+     </h1>
+ </div>
+ <div align="center">
+    <style>
+        .GeneratedMarquee {
+        font-family:'Comic Sans MS';
+        font-size:2em;
+        line-height:1.3em;
+    
+        padding:1.5em;
+        
+        }
+        </style>
+        
+        <!-- HTML Code -->
+        <marquee class="GeneratedMarquee" id="1nd" direction="left" scrollamount="28" behavior="alternate">ㅤ</marquee>
+        
+ </div>
+
+
+ <div align="center">
+    <marquee class="GeneratedMarquee" id="2nd" direction="left" scrollamount="28" behavior="alternate">ㅤ</marquee>
+
+ </div> 
+ <script>
+const sleep = () => {
+            return new Promise(resolve => setTimeout(resolve, 1000))
+}
+async function ad() {
+ await sleep()
+    document.getElementById("BLOODCLART").style = "width: 10%; margin: 0 auto; "
+    document.getElementById("donerkebab").width = "150"
+    document.getElementById("donerkebab").height = "150"
+    document.getElementById("1nd").innerText = "welcome to alabania website, sorry for the bad site quality, donation expected soon."
+    document.getElementById("2nd").innerText = "happy new year 2002"
+}
+     </script>
+</body>
+</html>
